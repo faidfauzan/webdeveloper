@@ -1,0 +1,703 @@
+body {
+  font-family: "poppins", sans-serif !important;
+  min-height: 3500px;
+  background-color: #222222;
+}
+/* Menghilangkan garis bawah default pada tautan */
+.nav-link {
+  text-decoration: none;
+  position: relative;
+  color: #ffffff;
+}
+
+/* Garis bawah yang muncul dari kiri ke kanan */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;  /* Ketebalan garis bawah */
+  background-color: #00cba9;  /* Warna garis bawah kuning */
+  bottom: 0;
+  left: 0;
+  transition: width 0.4s ease-out; /* Transisi animasi untuk lebar garis bawah */
+}
+
+/* Efek garis bawah muncul dari kiri ke kanan saat hover */
+.nav-link:hover::after {
+  width: 100%;  /* Garis bawah mengisi seluruh lebar saat hover */
+}
+/* hero style */
+#hero { 
+  /* background-image: url("../asset/kota\ wave\ 2.svg"); */
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: start;
+  padding-top: 100px;
+  background-color: #222222;
+  /* background-image:url("../asset/city.jpg"); */
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+#hero #hero-content #hero-content-title h1 {
+  color: #ffffff;
+  margin-top: 40%;
+  font-size: 100px;
+}
+#hero #hero-content #hero-content-title h4 {
+  color: #ffffff;
+  margin-top: 4%;
+  font-size: 30px;
+}
+#hero #hero-content #hero-content-image img {
+  margin-top: -1%;
+  margin-left: 40%;
+  width: 400px;
+  height: 500px;
+  border-radius: 10%;
+}
+/* hero style */
+
+/* About style */
+
+/* #about .container{
+  background-color: #00cba9;
+  width: 80%;
+  height: 500px;
+  border-radius: 10px;
+  background-image: url("../asset/kotalegam.svg");
+} */
+
+#about {
+ /* background-image: url("../asset/ireng.svg"); */
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: start;
+  padding-top: 100px;
+  background-color: #00cba9;
+  /* background-image:url("../asset/img/IMG_5064.JPG"); */
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+#about #about-content img {
+  margin-top: -1%;
+  margin-left: -5%;
+  width: 200px;
+  height: 300px;
+  border-radius: 10%;
+}
+
+#about #about-content #about-content-title h1 {
+  color: #ffffff;
+  margin-top: 4%;
+  font-size: 20px;
+}
+#about #about-content #about-content-desc p {
+  color: #ffffff;
+  margin-top: 4%;
+  font-size: 20px;
+}
+.skills {
+  margin-top: 30px;
+}
+
+.skills h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.skills p {
+  margin: 10px 0 5px;
+  color: #ffffff;
+}
+
+.bar {
+  background: #eee;
+  height: 8px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.fill {
+  background: #101a24;
+  height: 100%;
+}
+/* About style */
+
+/* sekolah style */
+#sekolah{
+  background-color: #222222;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* #sekolah .container{
+  background-color: #00cba9;
+  width: 80%;
+  height: 500px;
+  border-radius: 10px;
+  background-image: url("../asset/I.svg");
+} */
+
+#sekolah{
+  /* background-image: url("../asset/kota\ wave\ 2.svg"); */
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: start;
+  padding-top: 100px;
+  background-color: #222222;
+  /* background-image:url("../asset/img/IMG_5064.JPG"); */
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  margin-top: -100px;
+}
+
+#sekolah #sekolah-title h1{
+  color: #ffffff;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 150px;
+  
+}
+
+#sekolah #sekolah-content-1{
+  margin-top: 150px;
+  translate: 150px 30px;
+}
+#sekolah #sekolah-content-1 img{
+  border-radius: 10px;
+  translate: 10px 35px;
+  width: 70px;
+}
+#sekolah #sekolah-content-1 h1{
+  color: #ffffff;
+  font-size: 10px;
+  margin-top: 5px;
+  translate: 8px 40px;
+}
+
+
+#sekolah #sekolah-content-2{
+  margin-top: 150px;
+  translate: 150px 30px;
+}
+
+#sekolah #sekolah-content-2 img{
+  border-radius: 10px;
+  translate: 10px 35px;
+  width: 70px;
+}
+
+#sekolah #sekolah-content-2 h1{
+  color: #ffffff;
+  font-size: 10px;
+  margin-top: 5px;
+  translate: -12px 40px;
+}
+
+#sekolah #sekolah-content-3{
+  margin-top: 150px;
+  translate: 150px 30px;
+}
+
+#sekolah #sekolah-content-3 img{
+  border-radius: 10px;
+  translate: 10px 35px;
+  width: 70px;
+}
+
+#sekolah #sekolah-content-3 h1{
+  color: #ffffff;
+  font-size: 10px;
+  margin-top: 5px;
+  translate: -12px 40px;
+}
+
+Menghilangkan garis bawah default pada tautan
+.skl-link a {
+  text-decoration: none; /* Hilangkan garis bawah */
+    color: inherit; /* Warna teks mengikuti elemen di dalamnya */
+    position: relative; /* Untuk garis pseudo-element */
+    display: inline-block;
+}
+
+.skl-link, .skl-link h1 {
+  text-decoration: none;
+}
+
+
+/* Garis bawah yang muncul dari kiri ke kanan */
+.skl-link::after {
+  content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #00cba9; /* Ganti warna garis sesuai selera */
+    transition: width 0.3s ease;
+    translate: 4px 40px;
+}
+
+
+/* Efek garis bawah muncul dari kiri ke kanan saat hover */
+.skl-link:hover::after {
+    width: 25%;
+}
+/* sekolah style */
+
+/* project style */
+/* #product .container{
+  background-color: #00cba9;
+  width: 80%;
+  height: 500px;
+  border-radius: 10px;
+  background-image: url("../asset/kotalegam.svg");
+} */
+#product{
+  background-color: #00cba9;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  /* background-image: url("../asset/ireng.svg"); */
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+ }
+ 
+ #product .heading{
+  color: #ffffff;
+  font-size: 60px;
+  translate: 100px 30px;
+ }
+ 
+.dish-wrap {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  display: block;
+}
+.dish-wrap img {
+  border-radius: 10px;
+  margin-top: 100px;
+}
+.dish-wrap:before {
+  content: "";
+  position: absolute;
+  height: 80%;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  background-color: #c0bebe;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 50px 10px 50px 10px;
+  transition: 0.3s all ease;
+  box-shadow: 0 15px 30px -5px rgba(16, 26, 36, 0.07);
+}
+.dish-wrap .dish-thumbnail {
+  position: relative;
+  top: 0;
+  transition: 0.3s top ease;
+}
+.dish-wrap .dish-thumbnail .price {
+  position: absolute;
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+  background-color: #101a24;
+  color: #c0bebe;
+  line-height: 54px;
+  border-radius: 50px;
+  right: -10px;
+  top: 40%;
+  transform: translateY(-50%);
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 15px 30px 0 rgba(16, 26, 36, 0.4);
+}
+.dish-wrap .dish-body {
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 15px;
+}
+.dish-wrap .dish-body h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.dish-wrap .dish-body h3 a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.dish-wrap .dish-body h3 a:hover {
+  text-decoration: underline;
+}
+.dish-wrap:focus .dish-thumbnail, .dish-wrap:hover .dish-thumbnail, .dish-wrap.active .dish-thumbnail {
+  top: -10px;
+}
+.dish-wrap:focus:before, .dish-wrap:hover:before, .dish-wrap.active:before {
+  opacity: 1;
+  visibility: visible;
+}
+/* project style */
+
+/* contact style */
+#contact{
+  background-color: #222222;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  /* background-image: url("../asset/kota.svg"); */
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+ }
+ 
+/* contact style */
+
+/* Footer style */
+#menu-title{
+  color: #00cba9;
+}
+#footer-beranda a{
+  text-decoration: none;
+  color: #828893;
+  font-size: 16px;
+}
+#footer-beranda a:hover{
+  color: #00cba9;
+}
+#footer-tentang a{
+  text-decoration: none;
+  color: #828893;
+  font-size: 16px;
+}
+#footer-tentang a:hover{
+  color: #00cba9;
+}
+#footer-profil a{
+  text-decoration: none;
+  color: #828893;
+  font-size: 16px;
+}
+#footer-profil a:hover {
+  color: #00cba9;
+}
+#footer-ppdb a{
+  text-decoration: none;
+  color: #00cba9;
+  font-size: 16px;
+}
+#footer-ppdb a:hover{
+  color: #00cba9;
+}
+#hubungi-title{
+  color: #00cba9;
+}
+#footer-faq a{
+  text-decoration: none;
+  color: #828893;
+  font-size: 16px;
+}
+#footer-faq a:hover{
+  color: #00cba9;
+}
+#aplikasi-title{
+  color: #00cba9;
+}
+#footer-mylms a{
+  text-decoration: none;
+  color: #828893;
+  font-size: 16px;
+}
+#footer-mylms a:hover{
+  color: #00cba9;
+}
+#use-title{
+  color: #00cba9;
+}
+#footer-gracias {
+  text-decoration: none;
+  color: #828893;
+  font-size: 16px;
+}
+#stats{
+  color: #00cba9;
+}
+#mock-title{
+  color: #00cba9;
+}
+#Pageview{
+  color: #828893;
+}
+#v-1 {
+  color: #828893;
+}
+#v-2 {
+  color: #828893;
+}
+#v-3 {
+  color: #828893;
+}
+#v-4 {
+  color: #828893;
+}
+#alamat-title {
+  color: #f5a20d;
+}
+#alamat-1{
+  color: #828893;
+}
+#alamat-2{
+  color: #828893;
+}
+#alamat-3{
+  color: #828893;
+}
+#alamat-4{
+  color: #828893;
+}
+#alamat-5{
+  color: #828893;
+}
+
+/* --- Bagian Responsif Tambahan (Tambahkan ini di bagian bawah style.css Anda) --- */
+
+/* Umum untuk Semua Ukuran Layar Kecil (Mobile & Tablet) */
+@media (max-width: 991.98px) { /* Untuk ukuran tablet dan di bawahnya */
+    body {
+        min-height: auto; /* Hapus min-height tetap di body agar konten bisa menyesuaikan */
+    }
+
+    /* Navbar */
+    .navbar-collapse {
+        background-color: #16213e; /* Warna latar belakang menu mobile saat terbuka */
+        padding: 15px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    .navbar-nav {
+        align-items: center; /* Tengahkan item navigasi di mobile */
+    }
+
+    .navbar-nav .nav-item {
+        margin: 5px 0; /* Jarak antar item navigasi */
+    }
+
+    /* Hero Section */
+    #hero {
+        height: auto; /* Hapus tinggi tetap */
+        padding-top: 80px; /* Kurangi padding atas */
+        text-align: center; /* Tengahkan teks */
+        flex-direction: column; /* Tata letak kolom di mobile */
+        background-size: cover; /* Pastikan gambar background mengisi area */
+    }
+
+    #hero #hero-content #hero-content-title h1 {
+        font-size: 60px; /* Perkecil ukuran font H1 */
+        margin-top: 10%; /* Kurangi margin atas */
+    }
+
+    #hero #hero-content #hero-content-title h4 {
+        font-size: 24px; /* Perkecil ukuran font H4 */
+        margin-top: 2%; /* Kurangi margin atas */
+    }
+
+    #hero #hero-content #hero-content-image img {
+        width: 300px; /* Perkecil lebar gambar */
+        height: auto; /* Jaga rasio aspek */
+        margin-top: 30px; /* Sesuaikan margin atas */
+        margin-left: 0; /* Hapus margin kiri tetap */
+        max-width: 90%; /* Pastikan tidak melebihi lebar layar */
+    }
+
+    /* About Section */
+    #about {
+        height: auto; /* Hapus tinggi tetap */
+        padding-top: 50px;
+        text-align: center; /* Tengahkan teks */
+        background-size: cover; /* Pastikan gambar background mengisi area */
+    }
+
+    #about #about-content img {
+        width: 150px; /* Perkecil lebar gambar */
+        height: auto; /* Jaga rasio aspek */
+        margin-left: 0; /* Hapus margin kiri tetap */
+        margin-bottom: 30px; /* Tambah jarak bawah */
+    }
+
+    #about #about-content #about-content-title h1 {
+        font-size: 18px; /* Perkecil ukuran font */
+        margin-top: 2%;
+    }
+    #about #about-content #about-content-desc p {
+        font-size: 16px; /* Perkecil ukuran font paragraf */
+        margin-top: 2%;
+        padding: 0 15px; /* Tambah padding agar teks tidak terlalu rapat ke samping */
+    }
+
+    .skills p, .skills h3 {
+        text-align: center; /* Tengahkan teks skills */
+    }
+
+    /* School History Section */
+    #sekolah {
+        height: auto; /* Hapus tinggi tetap */
+        padding-top: 50px;
+        background-size: cover; /* Pastikan gambar background mengisi area */
+        margin-top: 0; /* Hapus margin negatif */
+    }
+
+    #sekolah #sekolah-title h1 {
+        font-size: 40px; /* Perkecil ukuran font judul */
+        margin-top: 50px; /* Kurangi margin atas */
+        margin-bottom: 30px;
+    }
+
+    #sekolah #sekolah-content-1,
+    #sekolah #sekolah-content-2,
+    #sekolah #sekolah-content-3 {
+        translate: 0 0; /* Hapus translate tetap */
+        margin: 20px auto; /* Tengahkan kolom dan beri jarak */
+        width: 80%; /* Atur lebar kolom untuk mobile */
+        max-width: 300px; /* Batasi lebar maksimum */
+    }
+    
+    #sekolah #sekolah-content-1 img,
+    #sekolah #sekolah-content-2 img,
+    #sekolah #sekolah-content-3 img {
+        width: 80px; /* Sesuaikan ukuran gambar logo */
+        height: 80px;
+        translate: 0 0; /* Hapus translate tetap */
+        margin-bottom: 10px; /* Kurangi margin bawah */
+    }
+
+    #sekolah #sekolah-content-1 h1,
+    #sekolah #sekolah-content-2 h1,
+    #sekolah #sekolah-content-3 h1 {
+        font-size: 14px; /* Perkecil ukuran font nama sekolah */
+        translate: 0 0; /* Hapus translate tetap */
+        margin-top: 5px;
+    }
+
+    .skl-link::after {
+        translate: 0 5px; /* Sesuaikan posisi garis bawah */
+    }
+
+    /* Project Section */
+    #product {
+        padding-top: 50px;
+        background-size: cover; /* Pastikan gambar background mengisi area */
+    }
+
+    #product .heading {
+        font-size: 40px; /* Perkecil ukuran font judul */
+        translate: 0 0; /* Hapus translate tetap */
+        margin-bottom: 30px;
+    }
+
+    .dish-wrap img {
+        margin-top: 50px; /* Kurangi margin atas gambar */
+    }
+
+    .dish-wrap {
+        margin-bottom: 30px; /* Beri jarak antar project card di mobile */
+    }
+
+    /* Contact Section */
+    #contact {
+        padding-top: 50px;
+        background-size: cover; /* Pastikan gambar background mengisi area */
+    }
+    #contact h2 {
+        font-size: 36px; /* Perkecil ukuran font judul */
+    }
+
+    /* Footer Section */
+    #footer {
+        text-align: center; /* Tengahkan teks di footer */
+    }
+
+    #footer .col-md-8,
+    #footer .col-md-4 {
+        margin-bottom: 30px; /* Beri jarak antar kolom footer */
+    }
+
+    #footer .row {
+        justify-content: center; /* Tengahkan konten row di footer */
+    }
+    
+    #footer ul {
+        padding-left: 0; /* Hapus padding default pada list */
+    }
+
+    #alamat-1 ul {
+        list-style: none; /* Hapus bullet point default */
+        padding: 0;
+    }
+}
+
+/* Hanya untuk Layar Sangat Kecil (Mobile Phone) */
+@media (max-width: 575.98px) { /* Untuk ukuran ponsel dan di bawahnya */
+    #hero #hero-content #hero-content-title h1 {
+        font-size: 45px; /* Ukuran font lebih kecil lagi untuk layar sangat kecil */
+    }
+
+    #hero #hero-content #hero-content-title h4 {
+        font-size: 20px;
+    }
+
+    #sekolah #sekolah-title h1,
+    #product .heading,
+    #contact h2 {
+        font-size: 32px;
+    }
+
+    .dish-wrap img {
+        height: 150px; /* Tinggi gambar proyek lebih kecil lagi */
+    }
+}
+ /* Animasi untuk Hero Section */
+        #hero-content-title {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        #hero-content-image {
+            animation: slideInFromRight 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideInFromRight {
+            0% { transform: translateX(100%); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+        }
+
+        /* Animasi untuk About Section */
+        #about-content {
+            transition: transform 0.3s ease;
+        }
+
+        #about-content:hover {
+            transform: scale(1.05);
+        }
+
+       /* Animasi untuk Project Section */
+        .dish-wrap {
+            transition: transform 0.3s ease;
+        }
+
+        .dish-wrap:hover {
+            transform: translateY(-5px);
+        }
